@@ -1,0 +1,7 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: Disable All Clients
+  hosts: Frontend
+  tasks:
+    - include: tasks/disableclients.yml
