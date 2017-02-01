@@ -3,5 +3,6 @@
 
 - name: Disable All Clients
   hosts: Frontend
+  user: servidorv
   tasks:
     - include: tasks/disableclients.yml
