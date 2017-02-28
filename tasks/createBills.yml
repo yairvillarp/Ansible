@@ -1,6 +1,6 @@
 ---
 - name: Disable Clients
-  shell: php /var/www/3play/artisan cron:disableclients
+  shell: php /var/www/3play/artisan cron:bills
   register: disabled
 
 - debug: msg="{{ disabled.stdout }}"
