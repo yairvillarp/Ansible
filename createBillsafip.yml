@@ -1,8 +1,8 @@
 ---
 # This playbook deploys the whole application stack in this site.
 
-- name: Create Bills
+- name: Create Bills Afip
   hosts: Frontend
   user: servidorv
   tasks:
-    - include: tasks/createBills.yml
+    - include: tasks/createBillsafip.yml

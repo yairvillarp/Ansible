@@ -1,6 +1,6 @@
 ---
-- name: Create Bills
-  shell: php /var/www/3play/artisan cron:bills
+- name: Create Bills Afip
+  shell: php /var/www/3play/artisan cron:bills:afip
   register: disabled
 
 - debug: msg="{{ disabled.stdout }}"
